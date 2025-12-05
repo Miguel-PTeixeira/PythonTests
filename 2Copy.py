@@ -31,7 +31,7 @@ if __name__ == "__main__":
     deepcopied_obj = RecursiveCopyObject(obj)
     deepcopied_obj += 2
     print("\n\tOriginal :", obj)
-    print("\n\tCopied + 1 :", copied_obj ,"\t\tSince it is a simple Object")
+    print("\n\tCopied + 1 :", copied_obj ,"\t\tSince it is an Immutable Object")
     print("\n\tRecursive Copied + 2 :", deepcopied_obj, "\t\tA recursive copy does exactly the same as a Copy")
 
     print("\n\nList Object")
@@ -45,5 +45,5 @@ if __name__ == "__main__":
     print("\n\tCopied + 1 :", copied_list, "\t\tYou can notice this one didn't change the pointed variable")
     print("\n\tRecursive Copied + 2 :", deepcopied_list, "\t\tThis one changed the pointed variable")
     print("\n\nDESC:")
-    print("\n\t Copy will only copy the given pointer to another memory location,\n\tbut the objects that that pointer point to are still the same.\n\tUse Recursive Copy to copy those too.\n\n")
+    print("\n\t Copy will only copy the given pointer to another memory location which can be Mutated,\n\tbut the objects that that pointer point to are still the same.\n\tUse Recursive Copy to copy those too.\n\n")
 
